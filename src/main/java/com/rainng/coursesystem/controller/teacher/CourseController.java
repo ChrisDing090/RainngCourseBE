@@ -19,6 +19,7 @@ public class CourseController extends BaseController {
 
     @RequestMapping("/list")
     public ResultVO list() {
+        System.out.println(service.list());
         return service.list();
     }
 }
